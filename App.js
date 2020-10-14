@@ -5,7 +5,6 @@
  * @format
  * @flow strict-local
  */
-
 import React, { useEffect } from 'react';
 import {
   SafeAreaView,
@@ -26,7 +25,6 @@ import CreateUser from './pages/CreateUser';
 import ShowUsers from './pages/ShowUsers';
 
 const App = () => {
-  
   return (
     <>
       <StatusBar barStyle="dark-content" />

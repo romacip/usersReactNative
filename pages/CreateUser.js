@@ -30,7 +30,11 @@ const CreateUser = () => {
   });
 
   const checkUser = () => {
-    console.log(infoUser);
+    //push on data
+  };
+
+  const handleDateChange = () => {
+
   };
 
   return (
@@ -38,23 +42,29 @@ const CreateUser = () => {
       <View style={{ flex: 1, flexDirection: 'column' }} >
         <View style={{ height: windowHeight/2 }} >
           <Text> Nombre (s): </Text>
-          <TextInput 
-            style={{height: 40}} 
+          <TextInput
+            style={{height: 40}}
             placeholder={infoUser.name}
+            onChangeText={(name) => Validation.validateOnlyLetters(name)}
           />
           <Text> Apellido Paterno: </Text>
-          <TextInput 
-            style={{height: 40}} 
+          <TextInput
+            style={{height: 40}}
             placeholder={infoUser.lastName}
+            onChangeText={(lastName) => Validation.validateOnlyLetters(lastName)}
           />
           <Text> Apellido Materno: </Text>
-          <TextInput 
-            style={{height: 40}} 
-            placeholder={infoUser.motherLastName} />
+          <TextInput
+            style={{height: 40}}
+            placeholder={infoUser.motherLastName}
+            onChangeText={(mLastName) => Validation.validateOnlyLetters(mLastName)}
+          />
           <Text> Correo electrónico: </Text>
-          <TextInput 
-            style={{height: 40}} 
-            placeholder={infoUser.email} />
+          <TextInput
+            style={{height: 40}}
+            placeholder={infoUser.email}
+            onChangeText={(email) => Validation.validateEmail(email)}
+          />
           <Text> Fecha de Nacimiento: </Text>
           <DatePicker
             style={{width: 200}}
@@ -66,10 +76,11 @@ const CreateUser = () => {
             maxDate="2016-06-01"
             confirmBtnText="Confirm"
             cancelBtnText="Cancel"
+            onChange={handleDateChange}
           />
         </View>
         <View>
-          <Button style={{ height: 50, width: 200 }} mode="outlined" onPress={() => console.log('Pressed')}>
+          <Button style={{ height: 50, width: 200 }} mode="outlined" onPress={() => checkUser()} >
             Crear
           </Button>
         </View>
