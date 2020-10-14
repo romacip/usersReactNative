@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Juan",
+        "lastName": "Perez",
+        "mothersLastName": "Perez",
+        "email": "perez@hotmail.com",
+        "birthday": "1995-02-02",
+        "activity": {
+            "work": true,
+            "study": false
+        }
+    },
+    {
+        "name": "Anastasia",
+        "lastName": "Rodriguez",
+        "mothersLastName": "Perez",
+        "email": "rodperez@hotmail.com",
+        "birthday": "1976-03-02",
+        "activity": {
+            "work": true,
+            "study": true
+        }
+    },
+    {
+        "name": "Edilberto",
+        "lastName": "Martinez",
+        "mothersLastName": "Perez",
+        "email": "mtzperez@hotmail.com",
+        "birthday": "2000-06-17",
+        "activity": {
+            "work": false,
+            "study": true
+        }
+    },
+    {
+        "name": "Roberto",
+        "lastName": "Perez",
+        "mothersLastName": "Perez",
+        "email": "robperez@hotmail.com",
+        "birthday": "1992-02-02",
+        "activity": {
+            "work": false,
+            "study": false
+        }
+    }
+]
